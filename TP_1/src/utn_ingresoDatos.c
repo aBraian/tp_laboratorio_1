@@ -44,4 +44,3 @@ int utn_getFloat(float * pResultado, char * mensaje, char * mensajeError, int ma
 	}
 	return retorno;
 }
-

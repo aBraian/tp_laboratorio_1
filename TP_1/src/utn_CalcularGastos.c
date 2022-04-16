@@ -39,17 +39,17 @@ int utn_Division(float * pResultado, float dividendo, int divisor){
 	return retorno;
 }
 
-int utn_DiferenciaDePrecios(float * pResultado, float precioAerolineas, float precioLatam){
+int utn_DiferenciaDePrecios(float * pResultado, float numero1, float numero2){
 	int retorno;
 	float bufferResta;
 	retorno = -1;
 	if(pResultado != NULL){
-		if(precioAerolineas >= precioLatam){
-			bufferResta = precioAerolineas - precioLatam;
+		if(numero1 >= numero2){
+			bufferResta = numero1 - numero2;
 			*pResultado = bufferResta;
 		}
-		else if(precioAerolineas < precioLatam){
-			bufferResta = precioLatam - precioAerolineas;
+		else if(numero1 < numero2){
+			bufferResta = numero2 - numero1;
 			*pResultado = bufferResta;
 		}
 	retorno = 0;
